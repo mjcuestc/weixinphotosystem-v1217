@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<link href="../UI_form/UICss.css" type="text/css" rel="stylesheet">
+    <link href="admin.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../../jquery.js" charset="gb2312"></script>
+    <script type="text/javascript" src="./admin.js" charset="gb2312"></script>
+    <script type="text/javascript" src="../UI_form/UIJs.js" charset="gb2312"></script>
+</head>
+<body>
+<div class="container">
+
+
+    <!-- --------------------导航--------------- -->
+    <div class="menu">
+        <div id="Logo">
+
+        </div>
+        <div id="menu_region">
+            <ul id="menu_tag_total">
+                <li class="menu_tag">
+                    <div id="Home">
+                        <p class="p">首页</p>
+                    </div>
+                </li>
+                <li class="menu_tag">
+                    <div id="Admin">
+                        <p class="p">管理员</p>
+                    </div>
+                </li>
+                <li class="menu_tag">
+                    <div id="User">
+                        <p class="p">用户</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- --------------------内容-------------------- -->
+    <div class="content">
+        <div class="index">
+            <div class="index_square" id="useless"></div>
+            <div class="index_square" id="Search">
+                <div class="search_square">
+                    <div class="search_ico"></div>
+                    <select id="seach_name">
+                        <option value="adminid">管理员身份证号</option>
+                        <option value="adminname">管理员姓名</option>
+                        <option value="username">用户姓名</option>
+                        <option value="usertelephone">用户电话</option>
+                    </select>
+                    <input id="search_text" type="text" placeholder="Search...">
+                </div>
+            </div>
+            <div class="index_square" id="Notice">
+                <div class="mail_other"></div>
+                <div class="mail_notice"></div>
+            </div>
+            <div class="index_square" id="Myaccount">
+                <div class="profile"></div>
+                <div class="name_text"></div>
+                <div class="expend"></div>
+            </div>
+        </div>
+        <div class="home_title">
+            <p><b><i>Home > Admin</i></b></p>
+        </div>
+
+        <div class="detail_region">
+            <div class="detail">
+                <div class="admin_table">
+                    <div class="admin_info">管理员信息</div>
+                    <div><button type="button" class="Add_admin" id="Add">添加新的管理员</button></div>
+                    <table class="table" id="table_t">
+                        <tbody>
+                        <tr>
+                            <th class="table_text" id="t_title_name">编号</th>
+                            <th class="table_text" id="t_title_name">姓名</th>
+                            <th class="table_location" id="t_title_lacation">联系电话</th>
+                            <th class="table_recent" id="t_title_recent">最近登录时间</th>
+                            <th class="table_online" id="t_title_online">是否在线</th>
+                            <th class="table_detaile" id="t_title_detaile">操作</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2017. All rights reserved.</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

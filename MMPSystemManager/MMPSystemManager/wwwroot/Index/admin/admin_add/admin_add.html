@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../../UI_form/UICss.css" type="text/css" rel="stylesheet">
+    <link href="admin_add.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../../../jquery.js" charset="gb2312"></script>
+    <script type="text/javascript" src="./admin_add.js" charset="gb2312"></script>
+    <script type="text/javascript" src="../../UI_form/UI_detail_add_admin_user.js" charset="gb2312"></script>
+</head>
+<body>
+<div class="container">
+
+
+    <!-- --------------------导航--------------- -->
+    <div class="menu">
+        <div id="Logo">
+
+        </div>
+        <div id="menu_region">
+            <ul id="menu_tag_total">
+                <li class="menu_tag">
+                    <div id="Home">
+                        <p class="p">首页</p>
+                    </div>
+                </li>
+                <li class="menu_tag">
+                    <div id="Admin">
+                        <p class="p">管理员</p>
+                    </div>
+                </li>
+                <li class="menu_tag">
+                    <div id="User">
+                        <p class="p">用户</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- --------------------内容-------------------- -->
+    <div class="content">
+        <div class="index">
+            <div class="index_square" id="useless"></div>
+            <div class="index_square" id="Search">
+                <div class="search_square">
+                    <div class="search_ico"></div>
+                    <select id="seach_name">
+                        <option value="adminid">管理员身份证号</option>
+                        <option value="adminname">管理员姓名</option>
+                        <option value="username">用户姓名</option>
+                        <option value="usertelephone">用户电话</option>
+                    </select>
+                    <input id="search_text" type="text" placeholder="Search...">
+                </div>
+            </div>
+            <div class="index_square" id="Notice">
+                <div class="mail_other"></div>
+                <div class="mail_notice"></div>
+            </div>
+            <div class="index_square" id="Myaccount">
+                <div class="profile"></div>
+                <div class="name_text"></div>
+                <div class="expend"></div>
+            </div>
+        </div>
+        <div class="home_title">
+            <p><b><i>Home > Admin > Admin_add</i></b></p>
+        </div>
+
+        <div class="detail_region">
+            <div class="detail">
+                <div class="admin_table">
+                    <table class="table">
+                        <tbody>
+
+                            <tr>
+                                <td>账号</td><td><input type="text" id="Account" placeholder="英文和数字..."/></td>
+                                <td>密码</td><td><input type="text" id="Password" placeholder="英文和数字..."/></td>
+                            </tr>
+
+                            <tr>
+                                <td>Id</td>
+                                <td><input type="text" id="AdminId" placeholder="英文和数字..."/></td>
+                                <td>级别</td>
+                                <td>
+                                    <select id="AdminGrade">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>姓</td><td><input type="text" id="AdminName_first" placeholder="姓..."/></td>
+                                <td>名</td><td><input type="text" id="AdminName_last" placeholder="名..."/></td>
+                            </tr>
+
+                            <tr>
+                                <td>联系电话</td><td><input type="text" id="AdminContactPhone" placeholder="电话..."/></td>
+                                <td>邮箱</td><td><input type="text" id="AdminContactEmail" placeholder="邮箱..."/></td>
+                            </tr>
+
+                            <tr>
+                                <td>头像</td><td><input type="text" id="AdminPicture" placeholder="头像（文件路径）..."/></td>
+                                <td>身份证</td><td><input type="text" id="AdminIdPict" placeholder="身份证（文件路径）..."/></td>
+                            </tr>
+
+                            <tr>
+                                <td>备注</td><td><input type="text" id="Remark" placeholder="备注..."/></td>
+                                <td></td><td><div><button class="button" type="submit" id="submit">确认提交</button></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2017. All rights reserved.</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

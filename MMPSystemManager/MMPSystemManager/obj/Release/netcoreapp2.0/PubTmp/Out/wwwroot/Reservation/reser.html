@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>预约</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <script type="text/javascript" src="./js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="../jquery.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/reser.js"></script>
+</head>
+<body>
+    <div style="padding: 10% 10% 10px;">
+        <div class="text-center">
+            <h4>欢迎进入预约系统</h4>
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</span>
+            <input type="text" class="form-control" id="username" placeholder="请输入姓名（可选）">
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon">联系方式：</span>
+            <input type="text" class="form-control" id="telephone" placeholder="请输入联系方式（可选）">
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon">旅游景点*：</span>
+            <select class="form-control" id="scenic">
+                <option value="九寨沟" selected>九寨沟</option>
+                <option value="峨眉山">峨眉山</option>
+                <option value="青城山">青城山</option>
+                <option value="都江堰">都江堰</option>
+                <option value="西岭雪山">西岭雪山</option>
+            </select>
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon">航拍地点*：</span>
+            <select class="form-control" id="position">
+                <option value="pos1" selected>pos1</option>
+                <option value="pos2">pos2</option>
+                <option value="pos3">pos3</option>
+                <option value="pos4">pos4</option>
+                <option value="pos5">pos5</option>
+            </select>
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-addon">航拍日期*：</span>
+            <input type="date" id="resdate" class="form-control">
+        </div>
+        <br>
+        <div class="input-group" id="timequantum">
+            <span class="input-group-addon">航拍时段*：</span>
+            <select class="form-control">
+                <option value="09:00-12:00" selected>09:00-12:00</option>
+                <option value="12:00-14:00">12:00-14:00</option>
+                <option value="14:00-17:00">14:00-17:00</option>
+            </select>
+        </div>
+        <br>
+        <div class="input-group">
+            <p class="text-justify"><input type="checkbox" value="agreement" id="agreement">我同意此<a href="viewreser.html" target="_blank">用户须知</a></p>
+            <p class="text-justify">提示：*为必选项，其他为可选项。在确认约定之前，请阅读用户须知，同意后，方可进行预约</p>
+            <div style="padding: 0% 40% 10px;">
+                <button id="btn1">预定</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

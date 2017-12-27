@@ -1,0 +1,68 @@
+﻿
+/***********************************本页内容**************************************/
+
+/******内容.表格********/
+
+.detail_region {
+    height: 609px;
+    width: 100%;
+    margin-top: 69px;
+    background-color: #FFFFFF;
+    border: 1px solid orange;
+}
+
+.detail {
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+
+.user_table {
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+}
+
+.user_info {
+    float: left;
+    margin-left: 15%;
+    margin-top: 11px;
+    font-size: 150%;
+}
+
+.table {
+    height: 20%;
+    margin-top: 3%;
+    min-width: 70%;
+    margin-left: 7%;
+    border-spacing: 0px 0px;
+    border: 1px solid black;
+    float: left;
+}
+
+th, td {
+    border-top: 2px solid #edecec;
+    text-align: center;
+    height: 50px;
+    width: 12%;
+}
+
+
+.delete {
+    float: left;
+    margin-left: 32%;
+    /*
+    background-color:deepskyblue;
+    width:60px;
+    height:24px;
+    background-image: url("../images/Index_image/delete_image.png");
+    */
+}
+
+.user_detail {
+    float: left;
+    margin-left: 5%;
+}
+

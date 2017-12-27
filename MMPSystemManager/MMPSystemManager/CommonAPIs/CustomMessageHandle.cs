@@ -1,0 +1,39 @@
+﻿using System.Collections.Generic;
+using System.IO;
+using Senparc.Weixin.MP.Entities;
+using Senparc.Weixin.MP.Entities.Request;
+using Senparc.Weixin.MP.MessageHandlers;
+using Senparc.Weixin.Context;
+
+namespace MMPSystemManager.CommonAPIs
+{
+    public partial class CustomMessageHandler : MessageHandler<MessageContext<IRequestMessageBase, IResponseMessageBase>>
+    {
+        public CustomMessageHandler(Stream inputStream, PostModel postModel) : base(inputStream, postModel)
+        {
+        }
+
+        public CustomMessageHandler(RequestMessageBase requestMessage) : base(requestMessage)
+        {
+        }
+
+        public override IResponseMessageBase OnEventRequest(IRequestMessageEventBase requestMessage)
+        {
+            return base.OnEventRequest(requestMessage);
+        }
+
+        public override IResponseMessageBase DefaultResponseMessage(IRequestMessageBase requestMessage)
+        {
+            var responseMessage = this.CreateResponseMessage<ResponseMessageText>();
+            responseMessage.Content = "这条消息来自于DefaultResponseMessage";
+            return responseMessage;
+        }
+
+        public override IResponseMessageBase OnTextRequest(RequestMessageText requestMessage)
+        {
+            var responseMessage = base.CreateResponseMessage<ResponseMessageText>();
+            responseMessage.Content = "您的OpenID是：" + responseMessage.FromUserName + ".\r\n您发送的文字是：" + requestMessage.Content;
+            return responseMessage;
+        }
+    }
+}
